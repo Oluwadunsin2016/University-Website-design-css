@@ -18,6 +18,9 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+     <!-- ---- Animate CSS ----- -->
+   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   </head>
   <body>
     <section class="sub-header">
@@ -36,7 +39,7 @@
 
         <i class="fa fa-bars" aria-hidden="true" onclick="showSideBar()"></i>
       </nav>
-      <h1>Our Courses</h1>
+      <h1 class="wow bounceInDown">Our Courses</h1>
     </section>
 
     <!-- ------ Course ------- -->
@@ -50,7 +53,7 @@
       </p>
 
       <div class="row">
-        <div class="course-col">
+        <div class="course-col wow fadeInLeft">
           <h3>Intermediate</h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
@@ -59,7 +62,7 @@
             iusto odit?
           </p>
         </div>
-        <div class="course-col">
+        <div class="course-col wow fadeInUp">
           <h3>Degree</h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
@@ -68,7 +71,7 @@
             iusto odit?
           </p>
         </div>
-        <div class="course-col">
+        <div class="course-col wow fadeInRight">
           <h3>Post Graduation</h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
@@ -89,7 +92,7 @@
       </p>
 
       <div class="row">
-        <div class="facilities-col">
+        <div class="facilities-col wow fadeInLeft">
           <img src="Images/library.png" alt="" />
           <h3>World Class Library</h3>
           <p>
@@ -99,7 +102,7 @@
             obcaecati! Minima, fugiat.
           </p>
         </div>
-        <div class="facilities-col">
+        <div class="facilities-col wow bounceInUp">
           <img src="Images/basketball.png" alt="" />
           <h3>Largest Play Ground</h3>
           <p>
@@ -109,7 +112,7 @@
             obcaecati! Minima, fugiat.
           </p>
         </div>
-        <div class="facilities-col">
+        <div class="facilities-col wow fadeInRight">
           <img src="Images/cafeteria.png" alt="" />
           <h3>Tasty and Healthy Food</h3>
           <p>
@@ -122,8 +125,9 @@
       </div>
     </section>
 
-    <!-- ------- Footer -------- -->
-    <section class="footer">
+    
+  <!-- ------- Footer -------- -->
+    <section class="footer wow fadeInUp delay-1s">
       <h4>About Us</h4>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
@@ -149,6 +153,11 @@
       function hideSideBar() {
         navLinks.style.right = "-200px";
       }
+    </script>
+
+     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
     </script>
   </body>
 </html>

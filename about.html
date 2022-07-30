@@ -18,6 +18,9 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+     <!-- ---- Animate CSS ----- -->
+   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   </head>
   <body>
     <section class="sub-header">
@@ -36,13 +39,13 @@
 
         <i class="fa fa-bars" aria-hidden="true" onclick="showSideBar()"></i>
       </nav>
-      <h1>About Us</h1>
+      <h1 class="wow bounceInDown">About Us</h1>
     </section>
 
     <!-- ------ About Us Content ------- -->
     <section class="about-us">
       <div class="row">
-        <div class="about-col">
+        <div class="about-col wow fadeInLeft">
           <h1>We are the World's largest university</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
@@ -64,14 +67,14 @@
           <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
         </div>
 
-        <div class="about-col">
+        <div class="about-col wow fadeInRight">
         <img src="Images/about.jpg" alt="">
         </div>
       </div>
     </section>
 
     <!-- ------- Footer -------- -->
-    <section class="footer">
+    <section class="footer wow fadeInUp delay-1s">
       <h4>About Us</h4>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
@@ -97,6 +100,11 @@
       function hideSideBar() {
         navLinks.style.right = "-200px";
       }
+    </script>
+
+     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
     </script>
   </body>
 </html>

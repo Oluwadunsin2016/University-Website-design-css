@@ -18,6 +18,13 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <!-- ---- Animate CSS ----- -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
   </head>
   <body>
     <section class="sub-header">
@@ -36,16 +43,18 @@
 
         <i class="fa fa-bars" aria-hidden="true" onclick="showSideBar()"></i>
       </nav>
-      <h1>Our Certificate & Online Programs for 2022</h1>
+      <h1 class="wow bounceInDown">Our Certificate & Online Programs for 2022</h1>
     </section>
 
     <!-- ------- Blog Page Content ------- -->
     <section class="blog-content">
       <div class="row">
         <div class="blog-left">
-          <img src="Images/certificate.jpg" />
-          <h2>Our Certificate & Online Programs for 2022</h2>
-          <p>
+          <img src="Images/certificate.jpg" class="wow fadeInLeft" />
+          <h2 class="wow fadeInUp">
+            Our Certificate & Online Programs for 2022
+          </h2>
+          <p class="wow fadeInRight">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus
             molestiae accusantium quos quibusdam soluta nobis adipisci. Eum,
             voluptatibus iure. Eveniet odit beatae quis, obcaecati assumenda
@@ -55,7 +64,7 @@
             nesciunt beatae ex inventore tenetur, sint cumque!
           </p>
           <br />
-          <p>
+          <p class="wow fadeInLeft">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus
             molestiae accusantium quos quibusdam soluta nobis adipisci. Eum,
             voluptatibus iure. Eveniet odit beatae quis, obcaecati assumenda
@@ -65,7 +74,7 @@
             nesciunt beatae ex inventore tenetur, sint cumque!
           </p>
           <br />
-          <p>
+          <p class="wow fadeInRight">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus
             molestiae accusantium quos quibusdam soluta nobis adipisci. Eum,
             voluptatibus iure. Eveniet odit beatae quis, obcaecati assumenda
@@ -75,7 +84,7 @@
             nesciunt beatae ex inventore tenetur, sint cumque!
           </p>
           <br />
-          <p>
+          <p class="wow fadeInLeft">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus
             molestiae accusantium quos quibusdam soluta nobis adipisci. Eum,
             voluptatibus iure. Eveniet odit beatae quis, obcaecati assumenda
@@ -85,31 +94,26 @@
             nesciunt beatae ex inventore tenetur, sint cumque!
           </p>
 
+          <div class="comment-box wow fadeInRight">
+            <h3>Leave a comment</h3>
 
-
-
-
-<div class="comment-box">
-<h3>Leave a comment</h3>
-
-<form class="comment-form">
-<input type="text" placeholder="Enter Name">
-<input type="email" placeholder="Enter Email">
-<textarea rows="5" placeholder="Your Comment"></textarea>
-<button type="submit" class="hero-btn red-btn">POST COMMENT</button>
-</form>
-</div>
-
-
-
+            <form class="comment-form">
+              <input type="text" placeholder="Enter Name" />
+              <input type="email" placeholder="Enter Email" />
+              <textarea rows="5" placeholder="Your Comment"></textarea>
+              <button type="submit" class="hero-btn red-btn">
+                POST COMMENT
+              </button>
+            </form>
+          </div>
         </div>
-        <div class="blog-right">
+        <div class="blog-right wow bounceInUp">
           <h3>Post Categories</h3>
           <div>
             <span>Business Analytics</span>
             <span>21</span>
           </div>
-            <div>
+          <div>
             <span>Data Science</span>
             <span>28</span>
           </div>
@@ -138,7 +142,7 @@
     </section>
 
     <!-- ------- Footer -------- -->
-    <section class="footer">
+    <section class="footer wow fadeInUp delay-1s">
       <h4>About Us</h4>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
@@ -164,6 +168,14 @@
       function hideSideBar() {
         navLinks.style.right = "-200px";
       }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    ></script>
+    <script>
+      new WOW().init();
     </script>
   </body>
 </html>
